@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In Review SLA Summary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Space Grotesk", "sans-serif"],
+              display: ["Playfair Display", "serif"],
+            },
+            colors: {
+              ink: "#0f1721",
+              mist: "#b5c0cc",
+              surface: "#151f2b",
+              surfaceBright: "#1c2a3a",
+              glow: "#e9b44c",
+              teal: "#4dd4ac",
+              coral: "#ef6f5c",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-ink text-white font-sans">
+    <div class="relative overflow-hidden">
+      <div
+        class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_#172234_0%,_#0f1721_55%,_#091018_100%)]"
+      ></div>
+      <div
+        class="pointer-events-none absolute left-12 top-12 h-64 w-64 rounded-full bg-[radial-gradient(circle,_rgba(233,180,76,0.7),_rgba(233,180,76,0))]"
+      ></div>
+      <div
+        class="pointer-events-none absolute bottom-0 right-8 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(77,212,172,0.5),_rgba(77,212,172,0))]"
+      ></div>
+      <div
+        class="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:80px_80px] opacity-50"
+      ></div>
+
+      <main class="relative mx-auto w-[min(1000px,92%)] py-16">
+        <header class="max-w-2xl space-y-4">
+          <p class="text-xs uppercase tracking-[0.3em] text-glow">In Review</p>
+          <h1 class="font-display text-4xl leading-tight md:text-5xl">
+            SLA Summary
+          </h1>
+          <p class="text-mist">
+            Track review turnaround times and identify SLA risks quickly.
+          </p>
+        </header>
+
+        <section class="mt-10 grid gap-6 md:grid-cols-3">
+          <article
+            class="md:col-span-1 rounded-2xl border border-white/10 bg-gradient-to-br from-surface to-surfaceBright p-6 shadow-[0_20px_45px_rgba(0,0,0,0.35)]"
+          >
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-mist">Total In Review</span>
+              <span class="rounded-full border border-teal/40 px-3 py-1 text-xs uppercase tracking-widest text-teal">
+                Live
+              </span>
+            </div>
+            <p class="mt-6 text-5xl font-semibold">142</p>
+            <p class="mt-2 text-sm text-mist">Agents currently under review.</p>
+          </article>
+
+          <article
+            class="md:col-span-2 rounded-2xl border border-white/10 bg-gradient-to-br from-surface to-surfaceBright p-6 shadow-[0_20px_45px_rgba(0,0,0,0.35)]"
+          >
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-mist">SLA Buckets</span>
+              <span class="rounded-full border border-glow/40 px-3 py-1 text-xs uppercase tracking-widest text-glow">
+                Summary
+              </span>
+            </div>
+            <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="rounded-xl border border-emerald-400/40 bg-emerald-500/15 px-4 py-5">
+                <p class="text-xs uppercase tracking-widest text-emerald-200">
+                  SLA 0 - 24 Hours
+                </p>
+                <p class="mt-4 text-3xl font-semibold text-emerald-100">82</p>
+              </div>
+              <div class="rounded-xl border border-yellow-400/40 bg-yellow-500/15 px-4 py-5">
+                <p class="text-xs uppercase tracking-widest text-yellow-100">
+                  24 - 36 Hours
+                </p>
+                <p class="mt-4 text-3xl font-semibold text-yellow-50">40</p>
+              </div>
+              <div class="rounded-xl border border-orange-400/50 bg-orange-500/15 px-4 py-5">
+                <p class="text-xs uppercase tracking-widest text-orange-100">
+                  46 - 48 Hours
+                </p>
+                <p class="mt-4 text-3xl font-semibold text-orange-50">15</p>
+              </div>
+              <div class="rounded-xl border border-red-400/50 bg-red-500/15 px-4 py-5">
+                <p class="text-xs uppercase tracking-widest text-red-100">
+                  SLA Breached
+                </p>
+                <p class="mt-4 text-3xl font-semibold text-red-50">5</p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
