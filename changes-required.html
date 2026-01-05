@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>In Review SLA Summary</title>
+    <title>Changes Required</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,7 +48,7 @@
         class="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.05)_1px,transparent_1px)] bg-[size:80px_80px] opacity-60"
       ></div>
 
-      <main class="relative mx-auto w-[min(1000px,92%)] py-16">
+      <main class="relative mx-auto w-[min(1050px,92%)] py-16">
         <header class="max-w-2xl space-y-4">
           <a
             href="index.html"
@@ -60,102 +60,80 @@
           <h1 class="font-display text-3xl leading-tight md:text-4xl whitespace-nowrap">
             Operational Metrics for Agent Publishing
           </h1>
-          <p class="text-slate-600">In Review SLA Summary</p>
+          <p class="text-slate-600">Changes Required</p>
         </header>
 
         <section class="mt-10 grid gap-6 md:grid-cols-3">
-          <article class="md:col-span-1 rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
-            <div class="flex items-center justify-between">
-              <span class="text-sm text-slate-500">Total In Review</span>
-              <span class="rounded-full border border-emerald-200 px-3 py-1 text-xs uppercase tracking-widest text-emerald-600">
-                Live
-              </span>
-            </div>
-            <p class="mt-6 text-5xl font-semibold">142</p>
-            <p class="mt-2 text-sm text-slate-600">Agents currently under review.</p>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
+            <p class="text-sm text-slate-500">Agents in Changes Required</p>
+            <p class="mt-6 text-5xl font-semibold text-slate-900">58</p>
           </article>
 
-          <article class="md:col-span-2 rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
-            <div class="flex items-center justify-between">
-              <span class="text-sm text-slate-500">SLA Buckets</span>
-              <span class="rounded-full border border-amber-200 px-3 py-1 text-xs uppercase tracking-widest text-amber-600">
-                Summary
-              </span>
-            </div>
-            <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              <div class="rounded-xl border border-emerald-300/60 bg-emerald-100 px-4 py-5">
-                <p class="text-xs uppercase tracking-widest text-emerald-800">
-                  SLA 0 - 24 Hours
-                </p>
-                <p class="mt-4 text-3xl font-semibold text-emerald-900">82</p>
-              </div>
-              <div class="rounded-xl border border-yellow-300/60 bg-yellow-100 px-4 py-5">
-                <p class="text-xs uppercase tracking-widest text-yellow-800">
-                  24 - 36 Hours
-                </p>
-                <p class="mt-4 text-3xl font-semibold text-yellow-900">40</p>
-              </div>
-              <div class="rounded-xl border border-orange-300/60 bg-orange-100 px-4 py-5">
-                <p class="text-xs uppercase tracking-widest text-orange-800">
-                  46 - 48 Hours
-                </p>
-                <p class="mt-4 text-3xl font-semibold text-orange-900">15</p>
-              </div>
-              <div class="rounded-xl border border-red-300/60 bg-red-100 px-4 py-5">
-                <p class="text-xs uppercase tracking-widest text-red-800">
-                  SLA Breached
-                </p>
-                <p class="mt-4 text-3xl font-semibold text-red-900">5</p>
-              </div>
-            </div>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
+            <p class="text-sm text-slate-500">Avg Time to Resubmission</p>
+            <p class="mt-6 text-4xl font-semibold text-slate-900">13 h 14 m</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
+            <p class="text-sm text-slate-500">Resubmission Success Rate</p>
+            <p class="mt-6 text-5xl font-semibold text-slate-900">72%</p>
           </article>
         </section>
 
-        <section class="mt-8 grid gap-6 md:grid-cols-4">
+        <section class="mt-8 grid gap-6">
           <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
-            <p class="text-sm text-slate-500">SLA Compliance % (Overall)</p>
-            <p class="mt-6 text-4xl font-semibold text-slate-900">88%</p>
-          </article>
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
-            <p class="text-sm text-slate-500">SLA Breach Count %</p>
-            <p class="mt-6 text-4xl font-semibold text-slate-900">12%</p>
-          </article>
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
-            <p class="text-sm text-slate-500">Avg Review Time</p>
-            <p class="mt-6 text-4xl font-semibold text-slate-900">18 h</p>
-          </article>
-          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
-            <p class="text-sm text-slate-500">Approval Rate</p>
-            <p class="mt-6 text-4xl font-semibold text-slate-900">76%</p>
+            <p class="text-sm text-slate-500">Resubmission Reasons (Top 5)</p>
+            <ol class="mt-5 space-y-2 text-sm text-slate-600">
+              <li class="flex items-center justify-between">
+                <span>Policy compliance gaps</span>
+                <span class="font-semibold text-slate-900">24%</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span>Latency regression</span>
+                <span class="font-semibold text-slate-900">19%</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span>Tooling errors</span>
+                <span class="font-semibold text-slate-900">17%</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span>Prompt safety issues</span>
+                <span class="font-semibold text-slate-900">15%</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span>Metadata missing</span>
+                <span class="font-semibold text-slate-900">12%</span>
+              </li>
+            </ol>
           </article>
         </section>
 
         <section class="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
           <div class="flex items-center justify-between">
             <p class="text-sm text-slate-500">AI-Powered Recommendations</p>
-            <p class="text-sm text-slate-500">Reduce review time</p>
+            <p class="text-sm text-slate-500">Improve resubmissions</p>
           </div>
           <div class="mt-6 grid gap-4 md:grid-cols-2">
             <article class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
-                Review Prioritization
+                Root-Cause Summaries
               </p>
               <p class="mt-3 text-lg font-semibold text-slate-900">
-                Auto-rank by SLA risk
+                Auto-diagnose common failures
               </p>
               <p class="mt-2 text-sm text-slate-600">
-                Agentic scoring pushes high-risk agents to the top of the queue.
+                GenAI maps issues to policy, UX, or tool gaps with examples.
               </p>
             </article>
             <article class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
               <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
-                Smart Feedback
+                Guided Fixes
               </p>
               <p class="mt-3 text-lg font-semibold text-slate-900">
-                Generate fix-ready change requests
+                Suggest edits and test steps
               </p>
               <p class="mt-2 text-sm text-slate-600">
-                GenAI drafts actionable feedback and highlights policy gaps.
+                Agentic checklist drafts patches and validates before resubmit.
               </p>
             </article>
           </div>
@@ -177,59 +155,59 @@
                   <th class="px-3 py-2 text-left font-semibold">SLA Status</th>
                   <th class="px-3 py-2 text-left font-semibold">Priority</th>
                   <th class="px-3 py-2 text-left font-semibold">Last Updated</th>
-                  <th class="px-3 py-2 text-left font-semibold">Review Type</th>
-                  <th class="px-3 py-2 text-left font-semibold">Assigned Reviewer</th>
-                  <th class="px-3 py-2 text-left font-semibold">Review Cycle #</th>
-                  <th class="px-3 py-2 text-left font-semibold">Predicted SLA Risk</th>
-                  <th class="px-3 py-2 text-left font-semibold">Blocking Issues</th>
-                  <th class="px-3 py-2 text-left font-semibold">Next Action Due</th>
+                  <th class="px-3 py-2 text-left font-semibold">Change Category</th>
+                  <th class="px-3 py-2 text-left font-semibold"># of Change Requests</th>
+                  <th class="px-3 py-2 text-left font-semibold">Last Feedback Sent</th>
+                  <th class="px-3 py-2 text-left font-semibold">Expected Resubmission</th>
+                  <th class="px-3 py-2 text-left font-semibold">Repeat Rejection Flag</th>
+                  <th class="px-3 py-2 text-left font-semibold">AI Fix Readiness</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-slate-100">
-                <tr>
-                  <td class="px-3 py-3 text-slate-900">AG-014 / InsightBot</td>
-                  <td class="px-3 py-3">Contoso</td>
-                  <td class="px-3 py-3">Third-party</td>
-                  <td class="px-3 py-3">Support</td>
-                  <td class="px-3 py-3 text-amber-700">At Risk</td>
-                  <td class="px-3 py-3">High</td>
-                  <td class="px-3 py-3">8m ago</td>
-                  <td class="px-3 py-3">Performance</td>
-                  <td class="px-3 py-3">A. Patel</td>
-                  <td class="px-3 py-3">2</td>
-                  <td class="px-3 py-3 text-amber-700">High</td>
-                  <td class="px-3 py-3">Latency regression</td>
-                  <td class="px-3 py-3">Today 3:00 PM</td>
-                </tr>
                 <tr>
                   <td class="px-3 py-3 text-slate-900">AG-022 / LedgerAI</td>
                   <td class="px-3 py-3">Fabrikam</td>
                   <td class="px-3 py-3">Customer</td>
                   <td class="px-3 py-3">Finance</td>
-                  <td class="px-3 py-3 text-emerald-700">Healthy</td>
-                  <td class="px-3 py-3">Normal</td>
-                  <td class="px-3 py-3">21m ago</td>
-                  <td class="px-3 py-3">Policy</td>
-                  <td class="px-3 py-3">L. Nguyen</td>
-                  <td class="px-3 py-3">1</td>
-                  <td class="px-3 py-3 text-emerald-700">Low</td>
-                  <td class="px-3 py-3">None</td>
-                  <td class="px-3 py-3">Today 1:30 PM</td>
+                  <td class="px-3 py-3 text-amber-700">At Risk</td>
+                  <td class="px-3 py-3">High</td>
+                  <td class="px-3 py-3">14m ago</td>
+                  <td class="px-3 py-3">Latency</td>
+                  <td class="px-3 py-3">3</td>
+                  <td class="px-3 py-3">Yesterday 4:10 PM</td>
+                  <td class="px-3 py-3">Today 6:00 PM</td>
+                  <td class="px-3 py-3 text-rose-700">Yes</td>
+                  <td class="px-3 py-3 text-amber-700">Medium</td>
                 </tr>
                 <tr>
-                  <td class="px-3 py-3 text-slate-900">AG-031 / OpsPilot</td>
+                  <td class="px-3 py-3 text-slate-900">AG-041 / CarePilot</td>
+                  <td class="px-3 py-3">Contoso</td>
+                  <td class="px-3 py-3">Third-party</td>
+                  <td class="px-3 py-3">Support</td>
+                  <td class="px-3 py-3 text-rose-700">Breached</td>
+                  <td class="px-3 py-3">Critical</td>
+                  <td class="px-3 py-3">38m ago</td>
+                  <td class="px-3 py-3">Policy</td>
+                  <td class="px-3 py-3">5</td>
+                  <td class="px-3 py-3">Today 10:05 AM</td>
+                  <td class="px-3 py-3">Tomorrow 9:00 AM</td>
+                  <td class="px-3 py-3 text-rose-700">Yes</td>
+                  <td class="px-3 py-3 text-rose-700">Low</td>
+                </tr>
+                <tr>
+                  <td class="px-3 py-3 text-slate-900">AG-053 / OpsBridge</td>
                   <td class="px-3 py-3">Microsoft</td>
                   <td class="px-3 py-3">Microsoft</td>
                   <td class="px-3 py-3">IT</td>
-                  <td class="px-3 py-3 text-rose-700">Breached</td>
-                  <td class="px-3 py-3">Critical</td>
-                  <td class="px-3 py-3">45m ago</td>
-                  <td class="px-3 py-3">Security</td>
-                  <td class="px-3 py-3">R. Singh</td>
-                  <td class="px-3 py-3">3</td>
-                  <td class="px-3 py-3 text-rose-700">High</td>
-                  <td class="px-3 py-3">Data access review</td>
-                  <td class="px-3 py-3">Overdue</td>
+                  <td class="px-3 py-3 text-amber-700">At Risk</td>
+                  <td class="px-3 py-3">High</td>
+                  <td class="px-3 py-3">51m ago</td>
+                  <td class="px-3 py-3">Metadata</td>
+                  <td class="px-3 py-3">2</td>
+                  <td class="px-3 py-3">Today 9:20 AM</td>
+                  <td class="px-3 py-3">Today 5:00 PM</td>
+                  <td class="px-3 py-3 text-slate-600">No</td>
+                  <td class="px-3 py-3 text-emerald-700">High</td>
                 </tr>
               </tbody>
             </table>
@@ -285,20 +263,20 @@
       (function () {
         const qa = [
           {
-            q: "Which SLA bucket needs attention now?",
-            a: "The 46-48 hour and breached buckets should be prioritized to avoid escalations.",
+            q: "What is driving changes required?",
+            a: "Policy compliance and latency regressions are the top drivers.",
           },
           {
-            q: "What can reduce review time fastest?",
-            a: "Auto-generated change requests and reviewer triage by risk reduce cycle time.",
+            q: "How can we speed resubmissions?",
+            a: "Auto-generate fix lists and add validation checks pre-resubmit.",
           },
           {
-            q: "Where are repeated issues coming from?",
-            a: "Recurring policy and latency issues point to missing pre-checks during submission.",
+            q: "Where should we intervene?",
+            a: "Agents with repeated failures should get guided remediation.",
           },
           {
-            q: "What should we automate next?",
-            a: "Automate policy pre-screening and QA checks before entering review.",
+            q: "What can AI automate here?",
+            a: "Root-cause summaries and patch suggestions for common issues.",
           },
         ];
 

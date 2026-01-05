@@ -33,88 +33,304 @@
       };
     </script>
   </head>
-  <body class="min-h-screen bg-ink text-white font-sans">
+  <body class="min-h-screen bg-slate-50 text-slate-900 font-sans">
     <div class="relative overflow-hidden">
       <div
-        class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_#172234_0%,_#0f1721_55%,_#091018_100%)]"
+        class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_#ffffff_0%,_#f8fafc_55%,_#eef2f7_100%)]"
       ></div>
       <div
-        class="pointer-events-none absolute left-12 top-12 h-64 w-64 rounded-full bg-[radial-gradient(circle,_rgba(233,180,76,0.7),_rgba(233,180,76,0))]"
+        class="pointer-events-none absolute left-12 top-12 h-64 w-64 rounded-full bg-[radial-gradient(circle,_rgba(14,165,233,0.35),_rgba(14,165,233,0))]"
       ></div>
       <div
-        class="pointer-events-none absolute bottom-0 right-8 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(77,212,172,0.5),_rgba(77,212,172,0))]"
+        class="pointer-events-none absolute bottom-0 right-8 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(34,197,94,0.25),_rgba(34,197,94,0))]"
       ></div>
       <div
-        class="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:80px_80px] opacity-50"
+        class="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.05)_1px,transparent_1px)] bg-[size:80px_80px] opacity-60"
       ></div>
 
       <main class="relative mx-auto w-[min(1100px,92%)] py-16">
         <header class="max-w-2xl space-y-4">
-          <p class="text-xs uppercase tracking-[0.3em] text-glow">Agent Publishing</p>
-          <h1 class="font-display text-4xl leading-tight md:text-5xl">
+          <h1 class="font-display text-3xl leading-tight md:text-4xl whitespace-nowrap">
             Operational Metrics for Agent Publishing
           </h1>
-          <p class="text-mist">
-            Monitor live availability and pipeline readiness in one place.
-          </p>
         </header>
 
-        <section class="mt-10 grid gap-6 md:grid-cols-3">
-          <article
-            class="rounded-2xl border border-white/10 bg-gradient-to-br from-surface to-surfaceBright p-6 shadow-[0_20px_45px_rgba(0,0,0,0.35)]"
+        <section class="mt-10 grid gap-6 md:grid-cols-2">
+          <a
+            href="agents-live.html"
+            class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)] transition hover:border-slate-300 hover:shadow-[0_24px_55px_rgba(15,23,42,0.16)]"
           >
             <div class="flex items-center justify-between">
-              <span class="text-sm text-mist">Agents Live</span>
-              <span class="rounded-full border border-teal/40 px-3 py-1 text-xs uppercase tracking-widest text-teal">
+              <span class="text-sm text-slate-500">Agents Live</span>
+              <span class="rounded-full border border-emerald-200 px-3 py-1 text-xs uppercase tracking-widest text-emerald-600">
                 Live
               </span>
             </div>
-            <p class="mt-6 text-5xl font-semibold">124</p>
-            <p class="mt-2 text-sm text-mist">Active agents serving customers now.</p>
-          </article>
+            <div class="mt-6 flex items-end gap-3">
+              <p class="text-5xl font-semibold">124</p>
+              <span class="pb-1 text-sm font-semibold text-emerald-600">↑ 5% WoW</span>
+            </div>
+            <div class="mt-2 flex items-center justify-between text-sm text-slate-600">
+              <span>Active agents serving customers now.</span>
+              <span class="text-slate-300 transition group-hover:text-slate-500">→</span>
+            </div>
+          </a>
 
-          <article
-            class="rounded-2xl border border-white/10 bg-gradient-to-br from-surface to-surfaceBright p-6 shadow-[0_20px_45px_rgba(0,0,0,0.35)]"
-          >
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
             <div class="flex items-center justify-between">
-              <span class="text-sm text-mist">Agents in Pipeline</span>
-              <span class="rounded-full border border-glow/40 px-3 py-1 text-xs uppercase tracking-widest text-glow">
+              <span class="text-sm text-slate-500">Agents in Pipeline</span>
+              <span class="rounded-full border border-amber-200 px-3 py-1 text-xs uppercase tracking-widest text-amber-600">
                 Pipeline
               </span>
             </div>
-            <p class="mt-6 text-5xl font-semibold">38</p>
-            <p class="mt-2 text-sm text-mist">Total agents moving through review.</p>
+            <div class="mt-6 flex items-end gap-3">
+              <p class="text-5xl font-semibold">38</p>
+              <span class="pb-1 text-sm font-semibold text-emerald-600">↑ 12% WoW</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Total agents moving through review.</p>
           </article>
 
-          <article
-            class="rounded-2xl border border-white/10 bg-gradient-to-br from-surface to-surfaceBright p-6 shadow-[0_20px_45px_rgba(0,0,0,0.35)] md:col-span-1"
-          >
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)] md:col-span-2">
             <div class="flex items-center justify-between">
-              <span class="text-sm text-mist">Pipeline Breakdown</span>
-              <span class="rounded-full border border-coral/40 px-3 py-1 text-xs uppercase tracking-widest text-coral">
+              <span class="text-sm text-slate-500">Pipeline Breakdown</span>
+              <span class="rounded-full border border-rose-200 px-3 py-1 text-xs uppercase tracking-widest text-rose-600">
                 Review
               </span>
             </div>
-            <div class="mt-6 grid gap-3">
+            <div class="mt-6 grid gap-4 md:grid-cols-3">
               <a
                 href="in-review.html"
-                class="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 px-4 py-3 transition hover:border-white/30 hover:bg-white/10"
+                class="group flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 transition hover:border-slate-300 hover:bg-slate-100"
               >
-                <span class="text-sm text-mist">In Review</span>
-                <span class="text-lg font-semibold">16</span>
+                <div class="space-y-2">
+                  <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
+                    In Review
+                  </p>
+                  <p class="text-3xl font-semibold text-slate-900">16</p>
+                </div>
+                <span class="text-slate-300 transition group-hover:text-slate-500">→</span>
               </a>
-              <div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-                <span class="text-sm text-mist">Changes Required</span>
-                <span class="text-lg font-semibold">12</span>
-              </div>
-              <div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 px-4 py-3">
-                <span class="text-sm text-mist">Approved - Pending Publish</span>
-                <span class="text-lg font-semibold">10</span>
-              </div>
+              <a
+                href="changes-required.html"
+                class="group flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 transition hover:border-slate-300 hover:bg-slate-100"
+              >
+                <div class="space-y-2">
+                  <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
+                    Changes Required
+                  </p>
+                  <p class="text-3xl font-semibold text-slate-900">12</p>
+                </div>
+                <span class="text-slate-300 transition group-hover:text-slate-500">→</span>
+              </a>
+              <a
+                href="approved-pending.html"
+                class="group flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-5 py-5 transition hover:border-slate-300 hover:bg-slate-100"
+              >
+                <div class="space-y-2">
+                  <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
+                    Approved - Pending Publish
+                  </p>
+                  <p class="text-3xl font-semibold text-slate-900">10</p>
+                </div>
+                <span class="text-slate-300 transition group-hover:text-slate-500">→</span>
+              </a>
             </div>
+          </article>
+        </section>
+
+        <section class="mt-6 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-slate-500">AI-Powered Recommendations</p>
+              <p class="text-sm text-slate-500">Quick operational insights</p>
+            </div>
+            <div class="mt-6 grid gap-4">
+              <article class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
+                  Pipeline Forecasting
+                </p>
+                <p class="mt-3 text-lg font-semibold text-slate-900">
+                  Predict publish date slippage
+                </p>
+                <p class="mt-2 text-sm text-slate-600">
+                  Agentic model forecasts delays and flags at-risk submissions.
+                </p>
+              </article>
+              <article class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
+                  Reviewer Assist
+                </p>
+                <p class="mt-3 text-lg font-semibold text-slate-900">
+                  Summarize review feedback
+                </p>
+                <p class="mt-2 text-sm text-slate-600">
+                  GenAI groups issues and proposes fixes to speed approvals.
+                </p>
+              </article>
+              <article class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
+                  Risk Prioritization
+                </p>
+                <p class="mt-3 text-lg font-semibold text-slate-900">
+                  Auto-rank high-impact agents
+                </p>
+                <p class="mt-2 text-sm text-slate-600">
+                  Focus ops attention based on usage, revenue, and SLA risk.
+                </p>
+              </article>
+            </div>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.12)]">
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-slate-500">Live Feed</span>
+              <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-emerald-600">
+                <span class="relative flex h-2 w-2">
+                  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                  <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+                </span>
+                Live
+              </span>
+            </div>
+            <ul class="mt-4 space-y-3 text-sm text-slate-600">
+              <li>
+                <span class="font-semibold text-slate-900">Agent 001</span> moved to
+                <span class="font-semibold text-emerald-700">Approved</span> state.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Agent 014</span> entered
+                <span class="font-semibold text-sky-700">In Review</span> after
+                policy checks.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Agent 022</span> flagged
+                for <span class="font-semibold text-amber-700">Changes Required</span>
+                (latency spike).
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Agent 009</span> moved to
+                <span class="font-semibold text-emerald-700">
+                  Approved - Pending Publish
+                </span>.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Agent 037</span> rejoined
+                <span class="font-semibold text-sky-700">In Review</span> with new
+                tests.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Agent 045</span> moved to
+                <span class="font-semibold text-amber-700">Changes Required</span>
+                for compliance edits.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Agent 053</span> published
+                and marked <span class="font-semibold text-emerald-700">Live</span>.
+              </li>
+              <li>
+                <span class="font-semibold text-slate-900">Agent 060</span> cleared
+                <span class="font-semibold text-sky-700">In Review</span>, moving to
+                <span class="font-semibold text-emerald-700">Approved</span>.
+              </li>
+            </ul>
+            <p class="mt-4 text-xs text-slate-400">Updated moments ago</p>
           </article>
         </section>
       </main>
     </div>
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+      <div class="mb-2 flex justify-end">
+        <span
+          id="copilot-badge"
+          class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600 shadow-sm"
+        >
+          Ask me anything!
+        </span>
+      </div>
+      <button
+        id="copilot-toggle"
+        class="flex h-12 w-12 items-center justify-center rounded-full bg-transparent p-0 shadow-none transition"
+        aria-label="Open Copilot"
+      >
+        <img
+          src="Copilot.png"
+          alt="Microsoft Copilot"
+          class="h-10 w-10 object-contain"
+        />
+      </button>
+      <div
+        id="copilot-panel"
+        class="mt-3 w-80 rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_18px_40px_rgba(15,23,42,0.18)] hidden"
+      >
+        <div class="flex items-center justify-between">
+          <p class="text-sm font-semibold text-slate-800">Microsoft Copilot</p>
+          <button
+            id="copilot-close"
+            class="text-slate-400 transition hover:text-slate-700"
+            aria-label="Close Copilot"
+          >
+            ✕
+          </button>
+        </div>
+        <p class="mt-2 text-xs text-slate-500">Quick insights</p>
+        <div id="copilot-questions" class="mt-3 grid gap-2"></div>
+        <div
+          id="copilot-answer"
+          class="mt-3 rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm text-slate-600"
+        >
+          Select a question to see the answer.
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const qa = [
+          {
+            q: "Which stage is the biggest bottleneck today?",
+            a: "In Review shows the highest volume and longest SLA exposure, making it the current bottleneck.",
+          },
+          {
+            q: "What should ops focus on this week?",
+            a: "Prioritize Agents in Pipeline with high SLA risk and low reviewer capacity to prevent publish delays.",
+          },
+          {
+            q: "How can we reduce SLA breaches?",
+            a: "Auto-rank by SLA risk, fast-path low-risk agents, and use agentic checks to pre-validate submissions.",
+          },
+          {
+            q: "Any early warning signals?",
+            a: "Rising Changes Required and repeated policy violations are early indicators of future delays.",
+          },
+        ];
+
+        const panel = document.getElementById("copilot-panel");
+        const toggle = document.getElementById("copilot-toggle");
+        const closeBtn = document.getElementById("copilot-close");
+        const questions = document.getElementById("copilot-questions");
+        const answer = document.getElementById("copilot-answer");
+        const badge = document.getElementById("copilot-badge");
+
+        if (!panel || !toggle || !closeBtn || !questions || !answer || !badge) return;
+
+        qa.forEach((item) => {
+          const btn = document.createElement("button");
+          btn.className =
+            "w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-left text-sm text-slate-700 transition hover:border-slate-300 hover:bg-slate-50";
+          btn.textContent = item.q;
+          btn.addEventListener("click", () => {
+            answer.textContent = item.a;
+          });
+          questions.appendChild(btn);
+        });
+
+        toggle.addEventListener("click", () => {
+          const isHidden = panel.classList.toggle("hidden");
+          badge.classList.toggle("hidden", !isHidden);
+        });
+        closeBtn.addEventListener("click", () => {
+          panel.classList.add("hidden");
+          badge.classList.remove("hidden");
+        });
+      })();
+    </script>
   </body>
 </html>
