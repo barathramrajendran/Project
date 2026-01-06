@@ -118,7 +118,7 @@
               >
                 <div class="space-y-2">
                   <p class="text-xs uppercase tracking-[0.2em] text-slate-400">
-                    Changes Required
+                    Revisions Needed
                   </p>
                   <p class="text-3xl font-semibold text-slate-900">12</p>
                 </div>
@@ -215,7 +215,7 @@
               </li>
               <li>
                 <span class="font-semibold text-slate-900">Agent 022</span> flagged
-                for <span class="font-semibold text-amber-700">Changes Required</span>
+                for <span class="font-semibold text-amber-700">Revisions Needed</span>
                 (latency spike).
               </li>
               <li>
@@ -231,7 +231,7 @@
               </li>
               <li>
                 <span class="font-semibold text-slate-900">Agent 045</span> moved to
-                <span class="font-semibold text-amber-700">Changes Required</span>
+                <span class="font-semibold text-amber-700">Revisions Needed</span>
                 for compliance edits.
               </li>
               <li>
@@ -283,7 +283,7 @@
             ✕
           </button>
         </div>
-        <p class="mt-2 text-xs text-slate-500">Quick insights</p>
+        <p id="copilot-subtitle" class="mt-2 text-xs text-slate-500">Quick insights</p>
         <div id="copilot-questions" class="mt-3 grid gap-2"></div>
         <div
           id="copilot-answer"
@@ -311,7 +311,7 @@
           },
           {
             q: "Any early warning signals?",
-            a: "Rising Changes Required and repeated policy violations are early indicators of future delays.",
+            a: "Rising Revisions Needed and repeated policy violations are early indicators of future delays.",
           },
         ];
 
@@ -321,8 +321,9 @@
         const questions = document.getElementById("copilot-questions");
         const answer = document.getElementById("copilot-answer");
         const badge = document.getElementById("copilot-badge");
+        const subtitle = document.getElementById("copilot-subtitle");
 
-        if (!panel || !toggle || !closeBtn || !questions || !answer || !badge) return;
+        if (!panel || !toggle || !closeBtn || !questions || !answer || !badge || !subtitle) return;
 
         qa.forEach((item) => {
           const btn = document.createElement("button");
@@ -343,6 +344,7 @@
           panel.classList.add("hidden");
           badge.classList.remove("hidden");
         });
+
       })();
     </script>
     <script>
